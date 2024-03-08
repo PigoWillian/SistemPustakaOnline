@@ -16,12 +16,14 @@ class BukuFiksi extends Buku{
     public void setgenre(){
         this.genre = genre;
     }
+
     @Override
     public void tampilkanInfo() {
         System.out.println("Jenis Buku: Fiksi");
         super.tampilkanInfo(); // Memanggil tampilkanInfo dari kelas induk
         System.out.println("Genre: " + genre);
     }
+
     public static void main(String[] args) {
         BukuFiksi bukufiksi1 = new BukuFiksi("Sikancil","Pigo",2022,"kartun");
         System.out.println(bukufiksi1.getJudul());
