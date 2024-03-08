@@ -5,6 +5,12 @@ public class BukuNonFiksi extends BukuFiksi {
         
     }
 
+    @Override
+    public void tampilkanInfo() {
+        System.out.println("Jenis Buku: Non-Fiksi");
+        super.tampilkanInfo(); // Memanggil tampilkanInfo dari kelas induk (BukuFiksi)
+    }
+    
     public static void main(String[] args) {
         BukuNonFiksi bukunonfiksi1 = new BukuNonFiksi
         ("Perang Dunia 2", "Max Havelar", 1946, "action");
