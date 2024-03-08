@@ -1,51 +1,51 @@
-public class Buku {
-    // Atribut dengan inkapsulasi (private)
-    private String judul;
-    private String penulis;
-    private int tahunTerbit;
-
-    // Konstruktor untuk inisialisasi objek Buku
-    public Buku(String judul, String penulis, int tahunTerbit) {
-        this.judul = judul;
-        this.penulis = penulis;
-        this.tahunTerbit = tahunTerbit;
+public class Desainkelasdasar {
+        // Atribut (private)
+        private String judul;
+        private String penulis;
+        private int tahunTerbit;
+    
+        // Konstruktor 
+        public  Buku(String judul, String penulis, int tahunTerbit) {
+            this.judul = judul;
+            this.penulis = penulis;
+            this.tahunTerbit = tahunTerbit;
+        }
+    
+        // Getter untuk mendapatkan nilai atribut judul
+        public String getJudul() {
+            return judul;
+        }
+    
+        // Setter untuk mengatur nilai atribut judul
+        public void setJudul(String judul) {
+            this.judul = judul;
+        }
+    
+        // Getter untuk mendapatkan nilai atribut penulis
+        public String getPenulis() {
+            return penulis;
+        }
+    
+        // Setter untuk mengatur nilai atribut penulis
+        public void setPenulis(String penulis) {
+            this.penulis = penulis;
+        }
+    
+        // Getter untuk mendapatkan nilai atribut tahunTerbit
+        public int getTahunTerbit() {
+            return tahunTerbit;
+        }
+    
+        // Setter untuk mengatur nilai atribut tahunTerbit
+        public void setTahunTerbit(int tahunTerbit) {
+            this.tahunTerbit = tahunTerbit;
+        }
+    
+        // Method untuk menampilkan informasi buku
+        public void tampilkanInfo() {
+            System.out.println("Informasi Buku:");
+            System.out.println("Judul: " + judul);
+            System.out.println("Penulis: " + penulis);
+            System.out.println("Tahun Terbit: " + tahunTerbit);
+        }       
     }
-
-    // Getter untuk mendapatkan nilai atribut judul
-    public String getJudul() {
-        return judul;
-    }
-
-    // Setter untuk mengatur nilai atribut judul
-    public void setJudul(String judul) {
-        this.judul = judul;
-    }
-
-    // Getter untuk mendapatkan nilai atribut penulis
-    public String getPenulis() {
-        return penulis;
-    }
-
-    // Setter untuk mengatur nilai atribut penulis
-    public void setPenulis(String penulis) {
-        this.penulis = penulis;
-    }
-
-    // Getter untuk mendapatkan nilai atribut tahunTerbit
-    public int getTahunTerbit() {
-        return tahunTerbit;
-    }
-
-    // Setter untuk mengatur nilai atribut tahunTerbit
-    public void setTahunTerbit(int tahunTerbit) {
-        this.tahunTerbit = tahunTerbit;
-    }
-
-    // Method untuk menampilkan informasi buku
-    public void tampilkanInfo() {
-        System.out.println("Informasi Buku:");
-        System.out.println("Judul: " + judul);
-        System.out.println("Penulis: " + penulis);
-        System.out.println("Tahun Terbit: " + tahunTerbit);
-    }
-}
