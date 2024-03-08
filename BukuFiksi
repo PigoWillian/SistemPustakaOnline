@@ -1,0 +1,28 @@
+class BukuFiksi extends Buku{
+
+    private String genre;
+
+    public BukuFiksi(String judul, String penulis, int tahunTerbit, String genre) {
+        super(judul, penulis, tahunTerbit);
+            
+        this.genre = genre;   
+
+    }
+    
+    public String getgenre(){
+        return genre;
+    }
+
+    public void setgenre(){
+        this.genre = genre;
+    }
+
+    public static void main(String[] args) {
+        BukuFiksi bukufiksi1 = new BukuFiksi("Sikancil","Pigo",2022,"kartun");
+        System.out.println(bukufiksi1.getJudul());
+        System.out.println(bukufiksi1.getPenulis());
+        System.out.println(bukufiksi1.getTahunTerbit());
+        System.out.println(bukufiksi1.getgenre());
+    }
+
+}
